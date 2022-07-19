@@ -1,0 +1,12 @@
+[{
+    "productName": "Lightbulbs",
+    "productPrice": "50",
+    "productImage": "../images/Lightbulbs.jpg"
+},
+{
+    "productName": "Keyboard",
+    "productPrice": "10",
+    "productImage": "../images/NatureKeyboard.jpg"
+
+}
+]
