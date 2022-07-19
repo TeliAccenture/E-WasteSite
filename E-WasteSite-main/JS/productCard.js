@@ -1,9 +1,5 @@
 //Credited to Telisa DP, Accenture Internship, Code First Girls 2022
 
-
-
-
-
 let html = '';
 let products;
 let oldelem;
