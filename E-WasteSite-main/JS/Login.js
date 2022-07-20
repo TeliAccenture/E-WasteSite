@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 document.querySelector("#linkCreateAccount").addEventListener("click", e => {
     e.preventDefault();
-    loginForm.classList.add("formHidden");
-    createAccountForm.classList.remove("formHidden")
+    loginForm.classList.add("form--hidden");
+    createAccountForm.classList.remove("form--hidden")
 });
 
 document.querySelector("#linkLogin").addEventListener("click", e => {
-    loginForm.classList.remove("formHidden");
-    createAccountForm.classList.add("formHidden")
+    loginForm.classList.remove("form--hidden");
+    createAccountForm.classList.add("form--hidden")
 })
 loginForm.addEventListener("submit", e => {
     e.preventDefault()

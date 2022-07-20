@@ -98,9 +98,10 @@ color: var(--error-color);
     cursor: pointer;
 }
 
-.formHidden{
+.form--hidden{
     display:none;
 }
+
 .bgimg {
     background-image: url("https://as1.ftcdn.net/v2/jpg/00/85/98/08/1000_F_85980822_VWs5yqRr1TOwfm5gk9qPQBgB191DcUFy.jpg");
      height: 100%;
