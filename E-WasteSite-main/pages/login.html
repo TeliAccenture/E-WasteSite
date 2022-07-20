@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" media="screen and (min-width: 719px)" href = "..\style\style.css">
+    <link rel = "stylesheet" href = "..\style\style.css">
     <link rel = "stylesheet" media="screen and (max-width: 720px)" href = "..\style\mobile.css">
     <title>Login</title>
 </head>
-<body>
-    <!--PLACEHOLDER CODE-->
+<body class = "loginContainer">
+   <div class = "loginForm">
+    <form class="form" id="login">
+        <h1 class = "formTitle">Login</h1>
+        <div class = "form formMessageError"></div>
+        <div class="formInputGroup">
+            <input type="text" class="formInput" autofocus placeholder="Username or email">
+            <div class="formInputErrorMessage"></div>
+        </div>
+        <div class="formInputGroup">
+            <input type="text" class="formInput"  autofocus placeholder="Password">
+            <div class="formInputErrorMessage"></div>
+        </div>
+        <button class="formButton" type="submit">Continue</button>
+        <p class="formText">
+            <a href="#" class="formLink">Forgot your password?</a>
+        </p>
+        <p class="formText">
+            <a href="./signUp.html" id="createAccountLink" class="formLink">Sign up</a>
+        </p>
+    </form>
+   </div>
+   <script src="../JS/Login.js"></script>
 </body>
 </html>

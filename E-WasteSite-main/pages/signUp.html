@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet"  href = "..\style\style.css">
+    <link rel = "stylesheet" media="screen and (max-width: 720px)" href = "..\style\mobile.css">
+    <title>Login</title>
+</head>
+<body class="loginContainer">
+   <div class = "loginForm">
+    <form class="form formHidden" id="createAccount">
+        <h1 class = "formTitle">Create Account</h1>
+        <div class = "formError"></div>
+        <div class="formInputGroup">
+            <input type="text" class="formInput" id= "signupUsername" autofocus placeholder="Username">
+            <div class="formInputErrorMessage"></div>
+        </div>
+        <div class="formInputGroup">
+            <input type="text" class="formInput" autofocus placeholder="Email">
+            <div class="formInputErrorMessage"></div>
+        </div>
+        <div class="formInputGroup">
+            <input type="text" class="formInput" autofocus placeholder="Password">
+            <div class="formInputErrorMessage"></div>
+        </div>
+        <div class="formInputGroup">
+            <input type="text" class="formInput" autofocus placeholder="Confirm Password">
+            <div class="formInputErrorMessage"></div>
+        </div>
+        <button class="formButton" type="submit">Continue</button>
+        <p class="formText">
+            <a href="./login.html" id="linkLogin" class="formLink">Already have an account? Sign in</a>
+        </p>
+    </form>
+   </div>
+   <script src="../JS/Login.js"></script>
+</body>
+</html>
