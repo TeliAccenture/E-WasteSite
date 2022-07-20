@@ -1,10 +1,14 @@
+
 :root{
     --primary-color: black;
     --secondary-color: white;
     --accent-color: rgb(16, 91, 16);
+    --inactive-color: grey;
     --border-color: rgb(98, 175, 107);
     --error-color: red;
+    --success-color: green;
     --link-color: blue;
+    --shadow-color: rgba(0,0,0,0.5);
 }
 
 .loginContainer{
@@ -19,12 +23,12 @@
     
 }
 
-.loginForm{
+.loginFormElement{
     width: 400px;
     max-width: 400px;
     margin: 1rem;
     padding: 2rem;
-    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    box-shadow: 0 0 40px var(--shadow-color);
     background: whitesmoke;
     color: black;
 }
@@ -33,6 +37,14 @@
 margin-bottom: 1rem;
 
 }
+
+.form > *:last-child{
+    margin-top: 0;
+}
+.form > *:first-child{
+    margin-top: 0;
+}
+
 .formInput{
 display: block;
 width: 100%;
@@ -48,17 +60,24 @@ transition: background 0.2s, border-color 0.2s;
 .formInput:focus{
    background: white;
 }
-.formInputErrorMessage{
+.formMessage{
+
+text-align: center;
+margin-bottom: 1rem;
+
+}
+.formMessage--success {
+    color: var(--success-color);
+}
+.formMessage--error{
+    color: var(--error-color)
+}
+
+.formInput--error{
 color: var(--error-color);
 border-color: var(--error-color);
 }
 
-.form formErrorMessage{
-margin-top: 0rem;
-font-size: 0.85rem;
-color: var(--error-color);
-
-}
 
 .formButton{
     width: 100%;
@@ -82,7 +101,7 @@ color: var(--error-color);
 }
 .formTitle{
     text-align: center;
-    color: black;
+    color: var(--primary-color);
 }
 .formText{
     text-align: center;

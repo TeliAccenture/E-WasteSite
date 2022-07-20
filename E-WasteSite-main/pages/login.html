@@ -1,3 +1,4 @@
+<!--Credited to Telisa DP Accenture Internship, Code First Girls 2022-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,27 +10,53 @@
     <title>Login</title>
 </head>
 <body class = "loginContainer">
-   <div class = "loginForm">
+    
+   <div class = "loginFormElement">
     <form class="form" id="login">
         <h1 class = "formTitle">Login</h1>
-        <div class = "form formMessageError"></div>
+        <div class = "formMessage"></div>
         <div class="formInputGroup">
             <input type="text" class="formInput" autofocus placeholder="Username or email">
-            <div class="formInputErrorMessage"></div>
+            <div class="formInput-error-message"></div>
         </div>
         <div class="formInputGroup">
             <input type="text" class="formInput"  autofocus placeholder="Password">
-            <div class="formInputErrorMessage"></div>
+            <div class="formInput-error-message"></div>
         </div>
         <button class="formButton" type="submit">Continue</button>
         <p class="formText">
             <a href="#" class="formLink">Forgot your password?</a>
         </p>
         <p class="formText">
-            <a href="./signUp.html" id="createAccountLink" class="formLink">Sign up</a>
+            <a id="createAccountLink"  class="formLink">Sign up</a>
         </p>
     </form>
-   </div>
-   <script src="../JS/Login.js"></script>
+    
+     <form class="form form--hidden" id="createAccount">
+         <h1 class = "formTitle">Create Account</h1>
+         <div class = "formMessage"></div>
+         <div class="formInputGroup">
+             <input type="text" class="formInput" id= "signupUsername" autofocus placeholder="Username">
+             <div class="formInput-error-message"></div>
+         </div>
+         <div class="formInputGroup">
+             <input type="text" class="formInput" autofocus placeholder="Email">
+             <div class="formInput-error-message"></div>
+         </div>
+         <div class="formInputGroup">
+             <input type="text" class="formInput" id="signupPassword" autofocus placeholder="Password">
+             <div class="formInput-error-message"></div>
+         </div>
+         <div class="formInputGroup">
+             <input type="text" class="formInput" autofocus placeholder="Confirm Password">
+             <div class="formInput-error-message"></div>
+         </div>
+         <button class="formButton" type="submit">Continue</button>
+         <p class="formText">
+             <a  id="loginLink" class="formLink">Already have an account? Sign in</a>
+         </p>
+     </form>
+    </div>
 </body>
 </html>
+<script src="../JS/Login.js"></script>
