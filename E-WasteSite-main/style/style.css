@@ -98,6 +98,6 @@ color: var(--error-color);
     cursor: pointer;
 }
 
-.formHidden{
+.form--hidden{
     display:none;
 }
