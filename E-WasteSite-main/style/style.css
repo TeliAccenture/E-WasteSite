@@ -128,3 +128,21 @@ border-color: var(--error-color);
 /*banner styling --> Emily F --> START*/
 
 /*banner styling --> Emily F --> END*/
+
+h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery-item{
+    text-align: center;
+}
+
+#goals{
+    display: flex;
+    justify-content: space-around;
+}
