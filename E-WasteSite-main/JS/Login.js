@@ -1,4 +1,6 @@
 //Credited to Telisa DP, Accenture Internship, Code First Girls 2022
+const strongPassword = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+
 
 //Setting main form feedback message
 function setFormMessage(formElement, type, message){
@@ -9,8 +11,9 @@ function setFormMessage(formElement, type, message){
     messageElement.classList.add(`formMessage--${type}`)
 }
 //Setting input field errors
-function SetInputError(inputElement, message){
-    inputElement.classList.add("formInput--error")
+function SetInputError(inputElement, message, type){
+    inputElement.classList.remove("formInput--error")
+    inputElement.classList.add(`formInput--${type}`)
     inputElement.parentElement.querySelector(".formInput-error-message").textContent = message;
 }
 
@@ -31,23 +34,40 @@ document.addEventListener("DOMContentLoaded", ()=> {
         createAccountForm.classList.add("form--hidden")
     })
 
+
     //Input validation cases
 
     document.querySelectorAll(".formInput").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
            
-            // if(e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10)
-            //     SetInputError(inputElement, "Username is too short")
-                switch(e.target.id) {
-                    case "signupUsername":
-                        SetInputError(inputElement, "Username is too short")
-                      break;
-                    case "signupPassword":
-                        SetInputError(inputElement, "Password too short")
-                      break;
+                     
+                switch (true) {
+                    case e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10:
+                        SetInputError(inputElement, "Username is too short", "error")
+                        break;
+
+                    case e.target.id === "signupPassword" && e.target.value.length > 0 && !strongPassword.test(e.target.value):
+                        SetInputError(inputElement, "Password too weak", "error")
+                        break;
+
+                    case e.target.id === "signupPassword" && strongPassword.test(e.target.value):
+                        SetInputError(inputElement, "", "")    
+                        break;
+
+                    case e.target.id === "confirmPassword" && e.target.value.length > 0 && e.target.id.value != document.getElementById("signupPassword").value:
+                        SetInputError(inputElement, "Password doesn't match", "error")
+                        break;
+                    case e.target.id === "confirmPassword" && e.target.id.value === document.getElementById("signupPassword").value:
+                            SetInputError(inputElement, "", "")
+                            break;
+
                     default:
+                        SetInputError(inputElement, "", "")
+                        break;
+                }
+              
                         
-                  }
+                  
         })
     })
 });
