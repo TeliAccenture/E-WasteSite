@@ -33,7 +33,12 @@ document.addEventListener("DOMContentLoaded", ()=> {
         loginForm.classList.remove("form--hidden");
         createAccountForm.classList.add("form--hidden")
     })
-
+    loginForm.addEventListener("submit", e => {
+        e.preventDefault()
+    
+        //Perform (fake) database call
+        setFormMessage(loginForm, "error", "Invalid username or password")
+    })
 
     //Input validation cases
 
