@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "../style/default.css">
-    <link rel = "stylesheet" href = "..\style\style.css">
+    <link rel = "stylesheet" media="screen and (min-width: 719px)" href = "..\style\style.css">
     <link rel = "stylesheet" media="screen and (max-width: 720px)" href = "..\style\mobile.css">
     <title>Login</title>
 </head>
@@ -17,11 +17,11 @@
         <h1 class = "formTitle">Login</h1>
         <div class = "formMessage"></div>
         <div class="formInputGroup">
-            <input type="text" class="formInput" autofocus placeholder="Username or email">
+            <input type="text" id="loginUsername" class="formInput" autofocus placeholder="Username or email">
             <div class="formInput-error-message"></div>
         </div>
         <div class="formInputGroup">
-            <input type="password" class="formInput"  autofocus placeholder="Password">
+            <input type="password" id="loginPassword" class="formInput"  autofocus placeholder="Password">
             <div class="formInput-error-message"></div>
         </div>
         <button class="formButton" type="submit">Continue</button>
