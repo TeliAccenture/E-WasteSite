@@ -13,6 +13,115 @@
     --shadow-color: rgba(0,0,0,0.5);
 }
 
+/*Banner Styling --> Emily F*/
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.main-banner {
+    margin: 0 auto;
+    width: 1200PX;
+    height: 350px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-banner .imgban {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+   transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+}
+
+.main-banner #imgban3 {
+    background-image: url(../images/newLocation.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-banner #imgban2 {
+    background-image: url(../images/onlineStore.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-banner #imgban1 {
+    background-image: url(../images/recycling.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgbanbtn {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    top: 150px;
+    z-index: 2000;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.imgbanbtn:hover {
+    opacity: 0.9;
+
+}
+
+.imgbanbtn-prev {
+    left: 5px;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgbanbtn-next {
+    right: 5px;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgban-box h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #fff
+}
+
+.imgban-box p {
+    padding-top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.main-banner #imgban3 .imgban-box {
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+.main-banner #imgban2 .imgban-box {
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+.main-banner #imgban1 .imgban-box {
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
 /*store styling --> Telisa DP --> START*/
 
 .productCard{
