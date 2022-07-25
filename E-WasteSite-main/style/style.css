@@ -227,21 +227,40 @@ transition: background 0.2s, border-color 0.2s;
     position:relative;
     background-size: contain;
   }
-.container {height: 500px;width: 500px;}
-.point{height: 15px;width: 15px;background-color: #bbb;border-radius: 50%;}
-.point-container{position: absolute;}
-.point-container.first{top: 50%;left: 58%;}
-.point-container.second{top: 55%;left: 65%;}
-.point-container.third{top: 60%;left: 72%;}
-.point-container.fourth{top: 68%;left: 58%;}
-.point-container.fifth{top: 70%;left: 73%;}
-.first-div, .second-div, .third-div, .fourth-div, .fifth-div {display: none;}
-.point.first:hover + .first-div, .point.second:hover + .second-div, .point.third:hover + .third-div, point.fourth:hover + .fourth-div, .point.fifth:hover + .fifth-div{display: block;}
-.hover {background-color:grey;z-index:99;position:absolute;width: 150px;}
-.hover > span {display:block;}
-.hover > span:first-child{margin-bottom: 5px;}
+.container {height: 500px;width: 500px;
+}
+.point{height: 15px;width: 15px;background-color: #bbb;border-radius: 50%;
+}
+.point-container{position: absolute;
+}
+.point-container.first{top: 50%;left: 58%;
+}
+.point-container.second{top: 55%;left: 65%;
+}
+.point-container.third{top: 60%;left: 72%;
+}
+.point-container.fourth{top: 68%;left: 58%;
+}
+.point-container.fifth{top: 70%;left: 73%;
+}
+.first-div, .second-div, .third-div, .fourth-div, .fifth-div {display: none;
+}
+.point.first:hover + .first-div, 
+.point.second:hover + .second-div, 
+.point.third:hover + .third-div, 
+.point.fourth:hover + .fourth-div, 
+.point.fifth:hover + .fifth-div{display: block;
+}
+.hover {background-color:gray;z-index:99;position:absolute;width: 150px;
+}
+.hover > span {display:block;
+}
+.hover > span:first-child{margin-bottom: 5px;
+}
 .hover > span:last-child{margin-bottom:15px;}
-.LocationSub {text-align: center;}
+
+.LocationSub {text-align: center;
+}
 /* locations styling END*/
 
 h2{
@@ -334,3 +353,18 @@ input[type=text], input[type=number], input[type=email], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 
   }
+  /* Basket styling START*/
+  .BasketImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .BasketItems{
+text-align: center;
+padding-bottom: 20px;
+  }
+  .BasketTotal{
+    text-align: center;
+  }
+  /* Basket styling end*/
