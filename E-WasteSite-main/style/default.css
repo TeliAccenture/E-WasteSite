@@ -15,6 +15,29 @@
     --shadow-color: rgba(0,0,0,0.5);
 }
 
+/*UNIVERSAL STYLING*/
+/*Navigation Blocks
+navBar <-- main parent
+ */
+
+ #navBar{
+    overflow: hidden;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-areas: "logo elementsLeft elementsRight";
+    grid-template-columns: 30% 50% 20%;
+ }
+
+ #nameAndLogo {
+    grid-area:logo; 
+    display: inline;
+    background-color: aqua;}
+ #elementsLeft{grid-area:elementsLeft; background-color: blue;}
+ #elementsRight{grid-area:elementsRight; background-color: brown;}
+
 /*store styling --> Telisa DP --> START*/
 
 .productCard{
@@ -32,11 +55,7 @@
     background-color: var(--secondary-color);
 }
 
-.productCard:hover{
-    transform: scale(1.05);
-    cursor: pointer;
- 
-}
+.productCard:hover{transform: scale(1.05);cursor: pointer;}
 
 .productGallery{
     display: flex;
@@ -46,8 +65,6 @@
     padding: 2rem;
     background-color: var(--shadow-color);
 }
-
-
 
 .normalButton{
    
