@@ -237,7 +237,7 @@ transition: background 0.2s, border-color 0.2s;
 .point-container.fifth{top: 70%;left: 73%;}
 .first-div, .second-div, .third-div, .fourth-div, .fifth-div {display: none;}
 .point.first:hover + .first-div, .point.second:hover + .second-div, .point.third:hover + .third-div, point.fourth:hover + .fourth-div, .point.fifth:hover + .fifth-div{display: block;}
-.hover {background-color:gray;z-index:99;position:absolute;width: 150px;}
+.hover {background-color:grey;z-index:99;position:absolute;width: 150px;}
 .hover > span {display:block;}
 .hover > span:first-child{margin-bottom: 5px;}
 .hover > span:last-child{margin-bottom:15px;}
