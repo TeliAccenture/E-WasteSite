@@ -17,6 +17,8 @@
 body {background-color: #f3f3f3;}
 
 .main-banner {
+    top: 150px;
+    position: relative;
     margin: 0 auto;
     width: 1200PX;
     height: 350px;
@@ -78,6 +80,7 @@ body {background-color: #f3f3f3;}
     color: #fff;
 }
 /*Banner Styling --> Emily F -->END*/
+
 
 /*store styling --> Telisa DP --> START*/
 
