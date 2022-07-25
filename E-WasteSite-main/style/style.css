@@ -354,17 +354,27 @@ input[type=text], input[type=number], input[type=email], select, textarea {
 
   }
   /* Basket styling START*/
-  .BasketImg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  .cartItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .BasketItems{
-text-align: center;
-padding-bottom: 20px;
+  img{
+    width: 200px;
+    height: 200px;
+    padding-top: 25px;
+  }
+  .BasketImg{
+    flex-basis: 20%;
+  }
+  .BasketItemTotal{
+    font-size: 30px;
+    padding-left: 10px;
   }
   .BasketTotal{
-    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-left: 10px;
   }
+  
   /* Basket styling end*/
