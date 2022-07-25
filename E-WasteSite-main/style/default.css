@@ -1,5 +1,7 @@
 /*Used for styles that are applied to both mobile and desktop */
 
+/*Removing default contraints */
+* { margin: 0; padding: 0; }
 /*Variable setup*/
 :root{
     --primary-color: black;
