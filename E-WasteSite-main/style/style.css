@@ -1,12 +1,19 @@
+/*Used for  desktop device layout */
+
+/*Variable setup*/
 :root{
     --primary-color: black;
     --secondary-color: white;
     --accent-color: rgb(16, 91, 16);
+    --inactive-color: grey;
     --border-color: rgb(98, 175, 107);
     --error-color: red;
+    --success-color: green;
     --link-color: blue;
+    --shadow-color: rgba(0,0,0,0.5);
 }
 
+/*Login and signup form styling --> Telisa DP --> START*/
 .loginContainer{
     margin: 0;
     height: 100vh;
@@ -19,12 +26,12 @@
     
 }
 
-.loginForm{
+.loginFormElement{
     width: 400px;
     max-width: 400px;
     margin: 1rem;
     padding: 2rem;
-    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    box-shadow: 0 0 40px var(--shadow-color);
     background: whitesmoke;
     color: black;
 }
@@ -33,6 +40,14 @@
 margin-bottom: 1rem;
 
 }
+
+.form > *:last-child{
+    margin-top: 0;
+}
+.form > *:first-child{
+    margin-top: 0;
+}
+
 .formInput{
 display: block;
 width: 100%;
@@ -48,17 +63,24 @@ transition: background 0.2s, border-color 0.2s;
 .formInput:focus{
    background: white;
 }
-.formInputErrorMessage{
+.formMessage{
+
+text-align: center;
+margin-bottom: 1rem;
+
+}
+.formMessage--success {
+    color: var(--success-color);
+}
+.formMessage--error{
+    color: var(--error-color)
+}
+
+.formInput--error{
 color: var(--error-color);
 border-color: var(--error-color);
 }
 
-.form formErrorMessage{
-margin-top: 0rem;
-font-size: 0.85rem;
-color: var(--error-color);
-
-}
 
 .formButton{
     width: 100%;
@@ -82,7 +104,7 @@ color: var(--error-color);
 }
 .formTitle{
     text-align: center;
-    color: black;
+    color: var(--primary-color);
 }
 .formText{
     text-align: center;
@@ -102,6 +124,7 @@ color: var(--error-color);
     display:none;
 }
 
+/* locations styling START*/
 .bgimg {
     background-image: url("https://as1.ftcdn.net/v2/jpg/00/85/98/08/1000_F_85980822_VWs5yqRr1TOwfm5gk9qPQBgB191DcUFy.jpg");
      height: 100%;
@@ -172,4 +195,102 @@ color: var(--error-color);
   }
   .hover > span:last-child{
     margin-bottom:15px;
+  }
+/* locations styling END*/
+
+/*Login and signup form styling --> Telisa DP --> END*/
+
+/*banner styling --> Emily F --> START*/
+
+/*banner styling --> Emily F --> END*/
+
+h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery-item{
+    text-align: center;
+}
+
+#goals{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+
+#whoWeAre{
+    background-color: #68E46A;
+    line-height: 150%;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+a{
+    color: black;
+}
+
+#right_navbar{
+    float: right;
+}
+
+#navbar{
+    float: center;  
+}
+
+a{
+    padding: 10px;
+}
+
+#navbar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #68E46A;
+    padding: 15px;
+}
+
+form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label, option, input, textarea{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #68E46A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: rgb(74, 168, 80);
+  }
+
+input[type=text], input[type=number], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
   }
