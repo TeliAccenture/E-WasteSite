@@ -14,33 +14,45 @@
     <script id="replace_with_navbar" src="../JS/nav.js"></script>
 <main>
     <!--Contact Form Code-->
-    <form>
-        <h2>Contact Us</h2>
-        <label for = "firstname">First Name:* </label>
-        <input type = "text" id = "firstname" name = "firstname" required>
-        <label for = "surname">Surname:*</label>
-        <input type = "text" id = "surname" name = "surname" required>
-        <label for = "pronouns">Pronouns:*</label>
-        <input type = "text" id = "pronouns" name = "pronouns" required>
-        <label for = "telephone">Telephone Number:</label>
-        <input type = "number" id = "telephoneNumber" name = "telephoneNumber">
-        <label for = "email">Email Address:*</label>
-        <input type = "email" id = "email" name = "email" required>
-
-        <label for = "enquiryType"> Enquiry Type:</label>
+    <form class="contactContainer">
+        <div class = "contactFormElement">
+        <h2 class="formTitle">Contact Us</h2>
+        <div class="formInputGroup">
+          <label for = "firstname" class="formText">First Name:* </label>
+        <input type = "text" id = "firstname" name = "firstname" class="formInput" autofocus placeholder="e.g. Sarah" required>   
+            </div>
+        <div class="formInputGroup">
+        <label for = "surname" class="formText">Surname:*</label>
+        <input type = "text" id = "surname" name = "surname" class="formInput" autofocus placeholder="e.g. Smith"required>
+            </div>
+        <div class="formInputGroup">
+        <label for = "pronouns" class="formText">Pronouns:</label>
+        <input type = "text" id = "pronouns" name = "pronouns" class="formInput" autofocus placeholder="e.g. she/her">
+            </div>
+        <div class="formInputGroup">
+        <label for = "telephone" class="formText">Telephone Number:</label>
+        <input type = "number" id = "telephoneNumber" name = "telephoneNumber" class="formInput" autofocus placeholder="e.g. (+44)756208609">
+            </div>
+        <div class="formInputGroup">
+        <label for = "email" class="formText">Email Address:*</label>
+        <input type = "email" id = "email" name = "email" class="formInput" autofocus placeholder="e.g. sarahsmith@gmail.com" required>
+            </div>
+        <label for = "enquiryType"class="formText"> Enquiry Type:</label>
         <select name = "enquiryType" required>
-        <option value = "recycling">Recycling</option>
-        <option value = "online Shop">Online Shop</option>
-        <option value = "website">Website</option>
-        <option value = "locations">Locations</option>
-        <option value = "other">Other</option>
+        <option class="formText" value = "recycling">Recycling</option>
+        <option class="formText" value = "online Shop">Online Shop</option>
+        <option class="formText" value = "website">Website</option>
+        <option class="formText" value = "locations">Locations</option>
+        <option class="formText" value = "other">Other</option>
         </select>
 
-        
-        <label for = "enquiry">Enquiry:*</label>
-        <textarea id = "enquiry" name = "enquiry" rows = 8></textarea>
-        <input type = "submit" name = "submit" value="Submit" >
-        <p>*Mandatory Fields</p>
+        <div class="formInputGroup">  
+        <label for = "enquiry" class="formText">Enquiry:*</label>
+        <textarea id = "enquiry" name = "enquiry" rows = 8 class="formInput" autofocus placeholder="Your enquiry here..."></textarea>
+        <input type = "submit" name = "submit" value="Submit" class="formButton" >
+    </div>
+        <p class="mandatoryField">* indicates mandatory fields</p>
+        </div>
     </form>
 </main>
 <!--Page Footer-->
