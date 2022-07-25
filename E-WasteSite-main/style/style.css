@@ -13,7 +13,7 @@
     --shadow-color: rgba(0,0,0,0.5);
 }
 
-/*Banner Styling --> Emily F*/
+/*Banner Styling --> Emily F -->START*/
 body {background-color: #f3f3f3;}
 
 .main-banner {
@@ -77,6 +77,7 @@ body {background-color: #f3f3f3;}
     font-size: 16px;
     color: #fff;
 }
+/*Banner Styling --> Emily F -->END*/
 
 /*store styling --> Telisa DP --> START*/
 
@@ -95,11 +96,7 @@ body {background-color: #f3f3f3;}
     background-color: var(--secondary-color);
 }
 
-.productCard:hover{
-    transform: scale(1.05);
-    cursor: pointer;
- 
-}
+.productCard:hover{transform: scale(1.05);cursor: pointer;}
 
 .productGallery{
     display: flex;
@@ -110,10 +107,7 @@ body {background-color: #f3f3f3;}
     background-color: var(--shadow-color);
 }
 
-
-
 .normalButton{
-   
     padding: 1rem 2rem;
     font-weight: bold;
     font-size: 1.1rem;
@@ -125,13 +119,8 @@ body {background-color: #f3f3f3;}
     background: var(--accent-color);
 }
 
-.normalButton:hover{
-    background-color: var(--border-color);
-}
-
-.normalButton:active{
-    transform: scale(0.98);
-}
+.normalButton:hover{background-color: var(--border-color);}
+.normalButton:active{transform: scale(0.98);}
 
 /*store styling --> Telisa DP --> END*/
 
@@ -144,8 +133,6 @@ body {background-color: #f3f3f3;}
     justify-content: center;
     font-size: 10px;
     background-size: cover;
- 
-    
 }
 
 .contactFormElement{
@@ -159,9 +146,7 @@ body {background-color: #f3f3f3;}
     border-radius: 5px;
 }
 
-.mandatoryField{
-    color: var(--error-color);
-}
+.mandatoryField{color: var(--error-color);}
 /*contact form styling --> Telisa DP --> END*/
 
 /*Login and signup form styling --> Telisa DP --> START*/
@@ -173,8 +158,7 @@ body {background-color: #f3f3f3;}
     justify-content: center;
     font-size: 10px;
     background-size: cover;
-    background-color: black;
-    
+    background-color: black;  
 }
 
 .loginFormElement{
@@ -188,17 +172,9 @@ body {background-color: #f3f3f3;}
     color: black;
 }
 
-.formInputGroup{
-margin-bottom: 1rem;
-
-}
-
-.form > *:last-child{
-    margin-top: 0;
-}
-.form > *:first-child{
-    margin-top: 0;
-}
+.formInputGroup{margin-bottom: 1rem;}
+.form > *:last-child{margin-top: 0;}
+.form > *:first-child{margin-top: 0;}
 
 .formInput{
 display: block;
@@ -212,27 +188,11 @@ background: rgb(199, 199, 199);
 transition: background 0.2s, border-color 0.2s;
 }
 
-.formInput:focus{
-   background: white;
-}
-.formMessage{
-
-text-align: center;
-margin-bottom: 1rem;
-
-}
-.formMessage--success {
-    color: var(--success-color);
-}
-.formMessage--error{
-    color: var(--error-color)
-}
-
-.formInput--error{
-color: var(--error-color);
-border-color: var(--error-color);
-}
-
+.formInput:focus{background: white;}
+.formMessage{text-align: center;margin-bottom: 1rem;}
+.formMessage--success {color: var(--success-color);}
+.formMessage--error{color: var(--error-color)}
+.formInput--error{color: var(--error-color);border-color: var(--error-color);}
 
 .formButton{
     width: 100%;
@@ -247,118 +207,42 @@ border-color: var(--error-color);
     background: var(--accent-color);
 }
 
-.formButton:hover{
-    background-color: var(--border-color);
-}
+.formButton:hover{background-color: var(--border-color);}
+.formButton:active{transform: scale(0.98);}
+.formTitle{text-align: center;color: var(--primary-color);}
+.formText{text-align: center;}
+.formLink{text-decoration: none;cursor: pointer;color:var(--link-color);}
+.formLink:hover{text-decoration: underline;cursor: pointer;}
+.form--hidden{display:none;}
 
-.formButton:active{
-    transform: scale(0.98);
-}
-.formTitle{
-    text-align: center;
-    color: var(--primary-color);
-}
-.formText{
-    text-align: center;
-}
-.formLink{
-    text-decoration: none;
-    cursor: pointer;
-    color:var(--link-color);;
-}
-
-.formLink:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.form--hidden{
-    display:none;
-}
 /*Login and signup form styling --> Telisa DP --> END*/
 
 /* locations styling START*/
 .bgimg {
     background-image: url("https://as1.ftcdn.net/v2/jpg/00/85/98/08/1000_F_85980822_VWs5yqRr1TOwfm5gk9qPQBgB191DcUFy.jpg");
-     height: 100%;
-     width: 100%;
-     background-repeat: no-repeat, no-repeat;
-      background-position: center, center;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
     position:relative;
     background-size: contain;
   }
-  .container {
-      height: 500px;
-      width: 500px;
-  }
-  .point{
-    height: 15px;
-    width: 15px;
-    background-color: #bbb;
-    border-radius: 50%;
-  }
-  .point-container{
-     position: absolute;
-  }
-  .point-container.first{
-    top: 50%;
-    left: 58%;
-  }
-  .point-container.second{
-    top: 55%;
-    left: 65%;
-  }
-  .point-container.third{
-    top: 60%;
-    left: 72%;
-  }
-  .point-container.fourth{
-    top: 68%;
-    left: 58%;
-  }
-  .point-container.fifth{
-    top: 70%;
-    left: 73%;
-  }
-  .first-div,
-  .second-div,
-  .third-div,
-  .fourth-div,
-  .fifth-div {
-    display: none;
-  }
-  .point.first:hover + .first-div,  
-  .point.second:hover + .second-div,  
-  .point.third:hover + .third-div,  
-  .point.fourth:hover + .fourth-div,  
-  .point.fifth:hover + .fifth-div{
-      display: block;
-  }
-  .hover {
-    background-color:gray;
-    z-index:99;
-    position:absolute;
-    width: 150px;
-  }
-  .hover > span {
-    display:block;
-  }
-  .hover > span:first-child{
-    margin-bottom: 5px;
-  }
-  .hover > span:last-child{
-    margin-bottom:15px;
-  }
-  .LocationSub {
-    text-align: center;
-  }
+.container {height: 500px;width: 500px;}
+.point{height: 15px;width: 15px;background-color: #bbb;border-radius: 50%;}
+.point-container{position: absolute;}
+.point-container.first{top: 50%;left: 58%;}
+.point-container.second{top: 55%;left: 65%;}
+.point-container.third{top: 60%;left: 72%;}
+.point-container.fourth{top: 68%;left: 58%;}
+.point-container.fifth{top: 70%;left: 73%;}
+.first-div, .second-div, .third-div, .fourth-div, .fifth-div {display: none;}
+.point.first:hover + .first-div, .point.second:hover + .second-div, .point.third:hover + .third-div, point.fourth:hover + .fourth-div, .point.fifth:hover + .fifth-div{display: block;}
+.hover {background-color:gray;z-index:99;position:absolute;width: 150px;}
+.hover > span {display:block;}
+.hover > span:first-child{margin-bottom: 5px;}
+.hover > span:last-child{margin-bottom:15px;}
+.LocationSub {text-align: center;}
 /* locations styling END*/
-
-
-
-/*banner styling --> Emily F --> START*/
-
-/*banner styling --> Emily F --> END*/
 
 h2{
     text-align: center;
