@@ -1,6 +1,7 @@
-//Credited to Telisa DP, Accenture Internship, Code First Girls 2022
-const strongPassword = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+//Credited to Telisa DP, Accenture Internship, 
+//Code First Girls 2022
 
+const strongPassword = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
 
 //Setting main form feedback message
 function setFormMessage(formElement, type, message){
@@ -35,9 +36,15 @@ document.addEventListener("DOMContentLoaded", ()=> {
     })
     loginForm.addEventListener("submit", e => {
         e.preventDefault()
-    
-        //Perform (fake) database call
-        setFormMessage(loginForm, "error", "Invalid username or password")
+        let loginUsername = document.querySelector("#loginUsername");
+        let loginPassword = document.querySelector("#loginPassword");
+        if(loginUsername.value.length > 3 && loginPassword.value.length > 5){
+            open("../pages/index.html")
+        }
+        else{
+         setFormMessage(loginForm, "error", "Invalid username or password")   
+        };
+        
     })
 
     //Input validation cases
