@@ -12,6 +12,64 @@
     --link-color: blue;
     --shadow-color: rgba(0,0,0,0.5);
 }
+
+/*store styling --> Telisa DP --> START*/
+
+.productCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 0 40px var(--shadow-color);
+    border-radius: 5px;
+    padding: 2rem;
+    max-width: 20%;
+    transition: background 0.2s, border-color 0.2s;
+    margin-bottom: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.productCard:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+ 
+}
+
+.productGallery{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 2rem;
+    background-color: var(--shadow-color);
+}
+
+
+
+.normalButton{
+   
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: var(--accent-color);
+}
+
+.normalButton:hover{
+    background-color: var(--border-color);
+}
+
+.normalButton:active{
+    transform: scale(0.98);
+}
+
+/*store styling --> Telisa DP --> END*/
+
 /*contact form styling --> Telisa DP --> START*/
 .contactContainer{
     margin: 0;
@@ -20,7 +78,8 @@
     align-items: center;
     justify-content: center;
     font-size: 10px;
-    background-size: cover; 
+    background-size: cover;
+ 
     
 }
 
@@ -117,7 +176,7 @@ border-color: var(--error-color);
     font-size: 1.1rem;
     color: white;
     border: none;
-    border-radius: var(--border-color);
+    border-radius: 5px;
     outline: none;
     cursor: pointer;
     background: var(--accent-color);
