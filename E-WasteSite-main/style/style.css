@@ -277,19 +277,6 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.gallery-item{
-    text-align: center;
-}
-
-#goals{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 5px;
-    padding-right: 50px;
-    padding-bottom: 25px;
-    padding-left: 50px;
-}
-
 #whoWeAre{
     background-color: #68E46A;
     line-height: 150%;
@@ -297,29 +284,6 @@ p{
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 80px;
-}
-
-a{
-    color: black;
-}
-
-#right_navbar{
-    float: right;
-}
-
-#navbar{
-    float: center;  
-}
-
-a{
-    padding: 10px;
-}
-
-#navbar{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    background-color: #68E46A;
-    padding: 15px;
 }
 
 form{
@@ -364,11 +328,15 @@ input[type=text], input[type=number], input[type=email], select, textarea {
     align-items: center;
     justify-content: center;
   }
+  /*TAG NAME NEEDS CHANGING, BREAKS ALL OTHER STYLING */
+  /*
   img{
     width: 200px;
     height: 200px;
     padding-top: 50px;
   }
+    */
+  
   .BasketImg{
     flex-basis: 30%;
   }

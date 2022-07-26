@@ -33,14 +33,19 @@
 .navigationElements a:hover{color: var(--hover-color);}
 .navigationElements a{text-decoration: none; color: white;}
 #nameAndLogo p {font-weight: bold; display: inline-block;padding: 0 1em; border-right: 5px solid white; vertical-align: 50px; color: white}
-#companyLogo{height: 75px; width: 75px;vertical-align: 25px; padding-left: 0.5em;}
-#nameAndLogo {grid-area:logo; background-color: #2E4057;}
+#companyLogo{height: 75px; width: 75px;vertical-align: 25px; padding-left: 0.5em; padding-top: 1.4em;}
+#nameAndLogo {grid-area:logo; background-color:var(--nav-color)}
 #navigationElements{grid-area:elements; height: 100%;text-align: left;background-color: var(--nav-color)}
 
 
 /*Footer Styling --> Emily F */
 footer { background-color: var(--nav-color); color: white; padding: 1em; line-height: 1.5;}
 footer li {list-style-type: none;}
+
+/*Index Page Styling */
+#goals h2{width:100%; padding-top: 2em;}
+#goalContainer{width: 100%; display: flex; justify-content: space-evenly;align-items: center;}
+.goal {display: inline-block;align-items: center;text-align: center;padding-top: 3em;padding-bottom: 5em;margin-left: 10%;}
 
 /*store styling --> Telisa DP --> START*/
 
