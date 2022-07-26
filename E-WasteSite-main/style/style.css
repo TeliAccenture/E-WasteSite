@@ -11,13 +11,14 @@
     --success-color: green;
     --link-color: blue;
     --shadow-color: rgba(0,0,0,0.5);
+    --hover-color: yellow ;
+    --nav-color: #2E4057;
 }
 
 /*Banner Styling --> Emily F -->START*/
 body {background-color: #f3f3f3;}
 
 .main-banner {
-    top: 150px;
     position: relative;
     margin: 0 auto;
     width: 1200PX;
@@ -32,7 +33,7 @@ body {background-color: #f3f3f3;}
     height: 100%;
     position: absolute;
     top: 0px;
-   transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
     -webkit-transition: all ease-in-out 500ms;
     -moz-transition: all ease-in-out 500ms;
     -o-transition: all ease-in-out 500ms;

@@ -1,7 +1,8 @@
 /*Used for styles that are applied to both mobile and desktop */
 
 /*Removing default contraints */
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0;
+    font-family: Arial, Helvetica, sans-serif; }
 /*Variable setup*/
 :root{
     --primary-color: black;
@@ -13,9 +14,14 @@
     --success-color: green;
     --link-color: blue;
     --shadow-color: rgba(0,0,0,0.5);
+    --hover-color: yellow ;
+    --nav-color: #2E4057;
 }
 
 /*UNIVERSAL STYLING*/
+.first-element{
+    top:125px;
+}
 /*Navigation Bar Styling --> Emily F --> START */
  #navBar{
     top: 0;
@@ -27,13 +33,13 @@
     grid-template-areas: "logo elements";
     grid-template-columns: 20% 80%;
  }
-.navigationElements li{list-style-type: none; display:inline-block; padding: 1em; vertical-align: -60px;}
-.navigationElements li:hover{background-color: gray; transform: scale(1.1); transition: 250ms linear;}
-.navigationElements a{text-decoration: none;}
-#nameAndLogo p {display: inline-block;padding-left: 1em;vertical-align: 50px;}
-#companyLogo{height: 75px; width: 75px;vertical-align: 25px;}
-#nameAndLogo {grid-area:logo; background-color: aqua;}
-#navigationElements{grid-area:elements; height: 100%;text-align: left;background-color: blue;}
+.navigationElements li{list-style-type: none; display:inline-block; padding: 0.8em; vertical-align: -60px;}
+.navigationElements a:hover{color: var(--hover-color);}
+.navigationElements a{text-decoration: none; color: white;}
+#nameAndLogo p {font-weight: bold; display: inline-block;padding: 0 1em; border-right: 5px solid white; vertical-align: 50px; color: white}
+#companyLogo{height: 75px; width: 75px;vertical-align: 25px; padding-left: 0.5em;}
+#nameAndLogo {grid-area:logo; background-color: #2E4057;}
+#navigationElements{grid-area:elements; height: 100%;text-align: left;background-color: var(--nav-color)}
 /*Navigation Bar Styling --> Emily F --> END */
 
 /*store styling --> Telisa DP --> START*/
