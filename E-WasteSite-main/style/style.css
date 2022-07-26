@@ -16,10 +16,7 @@
 }
 
 /*Banner Styling --> Emily F -->START*/
-body {background-color: #f3f3f3;}
-
 .main-banner {
-    position: relative;
     margin: 0 auto;
     width: 1200PX;
     height: 350px;
@@ -79,6 +76,10 @@ body {background-color: #f3f3f3;}
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #fff;
+}
+.spacer{
+    height:135px;
+    width:100%;
 }
 /*Banner Styling --> Emily F -->END*/
 

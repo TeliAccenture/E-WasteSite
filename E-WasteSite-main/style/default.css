@@ -1,8 +1,8 @@
 /*Used for styles that are applied to both mobile and desktop */
 
 /*Removing default contraints */
-* { margin: 0; padding: 0;
-    font-family: Arial, Helvetica, sans-serif; }
+* { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+
 /*Variable setup*/
 :root{
     --primary-color: black;
@@ -18,11 +18,7 @@
     --nav-color: #2E4057;
 }
 
-/*UNIVERSAL STYLING*/
-.first-element{
-    top:125px;
-}
-/*Navigation Bar Styling --> Emily F --> START */
+/*Navigation Bar Styling --> Emily F */
  #navBar{
     top: 0;
     z-index: 9999;
@@ -40,13 +36,11 @@
 #companyLogo{height: 75px; width: 75px;vertical-align: 25px; padding-left: 0.5em;}
 #nameAndLogo {grid-area:logo; background-color: #2E4057;}
 #navigationElements{grid-area:elements; height: 100%;text-align: left;background-color: var(--nav-color)}
-/*Navigation Bar Styling --> Emily F --> END */
 
 
-/*Footer Styling --> Emily F --> START*/
+/*Footer Styling --> Emily F */
 footer { background-color: var(--nav-color); color: white; padding: 1em; line-height: 1.5;}
 footer li {list-style-type: none;}
-/*Footer Styling --> Emily F --> END*/
 
 /*store styling --> Telisa DP --> START*/
 
