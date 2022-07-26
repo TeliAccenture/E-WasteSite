@@ -370,11 +370,11 @@ input[type=text], input[type=number], input[type=email], select, textarea {
     padding-top: 50px;
   }
   .BasketImg{
-    flex-basis: 20%;
+    flex-basis: 30%;
   }
   .BasketItemTotal{
     font-size: 20px;
-    padding-right: 50px;
+    padding-right: 10%;
   }
   .BCounter{
     width: 15%;
@@ -393,6 +393,11 @@ input[type=text], input[type=number], input[type=email], select, textarea {
     font-weight: 900;
     color: gray;
     cursor: pointer;
+  }
+  hr{
+    width: 66%;
+    float: right;
+    margin-top: 2%;
   }
   .BasketTotal{
     font-size: 20px;
