@@ -1,4 +1,4 @@
-let productsArray = [{
+export let productsArray = [{
     "productTitle": "Lightbulbs",
     "productPrice": "£50",
     "productImage": "../images/Lightbulbs.jpg",
@@ -20,7 +20,7 @@ let productsArray = [{
 }
 ]
 
-let usersArray = [{
+export let usersArray = [{
     "username": "Joanna",
     "email": "joanna@gmail.com",
     "password": "qweQWE123!"
@@ -37,4 +37,5 @@ let usersArray = [{
 }
 ]
 
-export {productsArray, usersArray};
+
+

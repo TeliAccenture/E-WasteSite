@@ -11,9 +11,10 @@
     <link rel = "stylesheet" href = "../style/default.css">
     <link rel = "stylesheet" media="screen and (min-width: 719px)" href = "..\style\style.css">
     <link rel = "stylesheet" media="screen and (max-width: 720px)" href = "..\style\mobile.css">
+   
     <title>Online Store</title>
 </head>
-<body>
+<body class="pageLayout">
     <!--Nav Bar-->
     <script id="replace_with_navbar" src="../JS/nav.js"></script>
     <!--Body-->
@@ -26,13 +27,6 @@
     </div>
     <div  id="productGallery" class="productGallery">
 
-        <!-- <div id = "product" class="productCard">
-            <h2 class="formTitle">Product Title</h2>
-            <img src = "../images/Lightbulbs.jpg" alt = "product image" height = "250px" width = "250px">
-            <p id = "productDescription" class="formText" >Product Description</p>
-            <p id = "price" class="formText">Price</p>
-            <button class="normalButton">Add to Cart</button>
-        </div>
         <div id = "product" class="productCard">
             <h2 class="formTitle">Product Title</h2>
             <img src = "../images/Lightbulbs.jpg" alt = "product image" height = "250px" width = "250px">
@@ -53,8 +47,16 @@
             <p id = "productDescription" class="formText" >Product Description</p>
             <p id = "price" class="formText">Price</p>
             <button class="normalButton">Add to Cart</button>
-        </div> -->
-        <script type="module" src="../JS/productCard.js" id="productContainer"></script>
+        </div>
+        <div id = "product" class="productCard">
+            <h2 class="formTitle">Product Title</h2>
+            <img src = "../images/Lightbulbs.jpg" alt = "product image" height = "250px" width = "250px">
+            <p id = "productDescription" class="formText" >Product Description</p>
+            <p id = "price" class="formText">Price</p>
+            <button class="normalButton">Add to Cart</button>
+        </div>
+        
+        <!-- <script type="module" src="../JS/productCard.js" id="productContainer"></script> -->
     </div>
     <!--Page Footer-->
     <script id="replace_with_footer" src="../JS/footer.js"></script>
