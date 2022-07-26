@@ -42,6 +42,12 @@
 #navigationElements{grid-area:elements; height: 100%;text-align: left;background-color: var(--nav-color)}
 /*Navigation Bar Styling --> Emily F --> END */
 
+
+/*Footer Styling --> Emily F --> START*/
+footer { background-color: var(--nav-color); color: white; padding: 1em; line-height: 1.5;}
+footer li {list-style-type: none;}
+/*Footer Styling --> Emily F --> END*/
+
 /*store styling --> Telisa DP --> START*/
 
 .productCard{
