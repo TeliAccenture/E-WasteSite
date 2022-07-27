@@ -43,7 +43,7 @@
 footer { background-color: var(--nav-color); color: white; padding: 1em; line-height: 1.5;}
 footer li {list-style-type: none;}
 
-/*Index Page Styling */
+/*Index Page Styling --> Emily F*/
 #goals h2{width:100%; padding-top: 2em;}
 #goalContainer{width: 100%; display: flex; justify-content: space-evenly;align-items: center;}
 .goal {display: inline-block;align-items: center;text-align: center;padding-top: 3em;padding-bottom: 5em;margin-left: 10%;}
@@ -54,7 +54,7 @@ footer li {list-style-type: none;}
 #whoWeAreContainer p {padding-top: 2em;padding-bottom: 2em;padding-right: 4em;width: 20%;float: left;}
 #ManOnTVImg {height: 300px;margin-bottom: 2em;float:right;box-shadow: var(--image-shadow);}
 
-/*Services Page*/
+/*Services Page* --> Emily F and Hui*/
 #ourServices h2{padding-left: 3em;text-align: left; padding-top: 1em;}
 #ourServices p {padding-left: 3em; padding-top: 2em; width: 45%;}
 #otherServicesContainer {display: flex;justify-content: center; padding-top: 4em;}
@@ -62,6 +62,15 @@ footer li {list-style-type: none;}
 .otherServices {padding: 2em;text-align: center; width: 100%;background-color: #68E46A;box-shadow: var(--shadow-color);}
 .otherServices img {box-shadow: var(--image-shadow);}
 .otherServices p a{ text-decoration: none;}
+
+/*Learn More Page --> Emily F*/
+#learnTitle {text-align: left;padding-left: 3em;padding-top: 2em;}
+#learnContainer{display: flex;justify-content: center;padding-top: 4ems;}
+.learn {padding: 4em;width: 25%;}
+
+#interactiveExp{background-color: #68E46A;}
+#gameContainer{background-color: #68E46A;display: flex;justify-content: center;}
+#game {background-color: white;width: 75%;height: 400px;margin-bottom: 2em;margin-top: 2em;}
 /*store styling --> Telisa DP --> START*/
 
 .productCard{
