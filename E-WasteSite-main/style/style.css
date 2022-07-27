@@ -69,3 +69,44 @@
 .storeContainer{
   margin: 2rem;
 }
+
+.imgbanbtn {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  top: 150px;
+  z-index: 2000;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.imgbanbtn:hover {opacity: 0.9;}
+.imgbanbtn-prev {left: 5px;background-size: 60%;background-position: center;background-repeat: no-repeat;}
+.imgbanbtn-next {right: 5px;background-size: 60%;background-position: center;background-repeat: no-repeat;}
+
+/*Banner Text Font Styling */
+.imgban-box {padding-top: 10px;padding-left: 100px; width: 60%;}
+#imgban3 .imgban-box p, #imgban3 .imgban-box h2{color: red;}
+#imgban2 .imgban-box p, #imgban2 .imgban-box h2{color: #935dff;}
+#imgban1 .imgban-box p, #imgban1 .imgban-box h2{color: #7ed957;}
+
+.imgban-box h2 {
+  text-align: left;
+  padding-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  color: #fff
+}
+
+.imgban-box p {
+  padding-top: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.spacer{
+  height:135px;
+  width:100%;
+}
