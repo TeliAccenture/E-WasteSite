@@ -16,67 +16,84 @@
     <!--Navigation Bar Code-->
     <script id="replace_with_navbar" src="../JS/nav.js"></script>
     <!--Page Body, split into further Divs for clarity-->
-    <main>
-        
-            <h2 class="LocationTitle">Our Locations</h2>
-            <p class="LocationSub">The locations of our centres and where you can find the nearest centre to you.</p>
+<main>
+  <div class="spacer"></div>
+  <div id="pageContainer">
+    <div id="locationsDetailAndSearchContainer">
+      <h2 class="LocationTitle">Our Locations</h2>
+        <p class="LocationSub">The locations of our centres and where you can find the nearest centre to you.</p>
+        <form id = "locationSearch">
+          <label for = "locationSearch">Locations</label>
+          <select name="locations" id="locations">
+            <option value="manchester">Manchester</option>
+            <option value="nottingham">Nottingham</option>
+            <option value="cambridge">Cambridge</option>
+            <option value="bristol">Bristol</option>
+            <option value="maidstone">Maidstone</option>
+          </select>
+        </form>
+        <div id="locationDetails"></div>
+    </div>
+    
+    <div class="mapContainer">
+      <div class="bgimg">
+        <div class="point-container first">
+          <div class="point first"></div>
+          <div class="hover first-div">
+            <span>Location Details</span>
+            <span>Manchester</span>
+            <span>M4 1HQ</span>
+            <span>020 3654 8092</span>
+            <span>9am-5pm</span>
+          </div>
+        </div>
 
-             <div class="container">
-                <div class="bgimg">
-                <div class="point-container first">
-                  <div class="point first"></div>
-                  <div class="hover first-div">
-                    <span>Location Details</span>
-                     <span>Manchester</span>
-                    <span>M4 1HQ</span>
-                    <span>020 3654 8092</span>
-                    <span>9am-5pm</span>
-                  </div>
-                </div>
-                 <div class="point-container second">
-                  <div class="point second"></div>
-                  <div class="hover second-div">
-                     <span>Location Details</span>
-                     <span>Nottingham</span>
-                    <span>NG1 2ET</span>
-                    <span>020 3654 0913</span>
-                    <span>9am-5pm</span>
-                  </div>
-                </div>
-                       <div class="point-container third">
-                  <div class="point third"></div>
-                  <div class="hover third-div">
-                     <span>Location Details</span>
-                     <span>Cambridge</span>
-                    <span>CB4 1NL</span>
-                    <span>020 3654 7923</span>
-                    <span>9am-5pm</span>
-                  </div>
-                </div>
-                       <div class="point-container fourth">
-                  <div class="point fourth"></div>
-                  <div class="hover fourth-div">
-                     <span>Location Details</span>
-                     <span>Bristol</span>
-                    <span>BS1 2AT</span>
-                    <span>020 3654 3756</span>
-                    <span>9am-5pm</span>
-                  </div>
-                </div>
-                       <div class="point-container fifth">
-                  <div class="point fifth"></div>
-                  <div class="hover fifth-div">
-                     <span>Location Details</span>
-                     <span>Maidstone</span>
-                    <span>ME14 1HJ</span>
-                    <span>020 3654 6978</span>
-                    <span>9am-5pm</span>
-                  </div>
-                </div>
-            </div>
-            </div>
-            
-    </main>
-    <script id="replace_with_footer" src="../JS/footer.js"></script>
+        <div class="point-container second">
+          <div class="point second"></div>
+          <div class="hover second-div">
+            <span>Location Details</span>
+            <span>Nottingham</span>
+            <span>NG1 2ET</span>
+            <span>020 3654 0913</span>
+            <span>9am-5pm</span>
+          </div>
+        </div>
+
+        <div class="point-container third">
+          <div class="point third"></div>
+          <div class="hover third-div">
+            <span>Location Details</span>
+            <span>Cambridge</span>
+            <span>CB4 1NL</span>
+            <span>020 3654 7923</span>
+            <span>9am-5pm</span>
+          </div>
+        </div>
+      
+        <div class="point-container fourth">
+          <div class="point fourth"></div>
+          <div class="hover fourth-div">
+            <span>Location Details</span>
+            <span>Bristol</span>
+            <span>BS1 2AT</span>
+            <span>020 3654 3756</span>
+            <span>9am-5pm</span>
+          </div>
+      </div>
+
+      <div class="point-container fifth">
+         <div class="point fifth"></div>
+         <div class="hover fifth-div">
+            <span>Location Details</span>
+            <span>Maidstone</span>
+            <span>ME14 1HJ</span>
+            <span>020 3654 6978</span>
+            <span>9am-5pm</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script id="replace_with_footer" src="../JS/footer.js"></script>
 </body>
 </html>
