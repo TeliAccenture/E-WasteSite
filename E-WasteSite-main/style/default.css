@@ -42,6 +42,7 @@
 /*Footer Styling --> Emily F */
 footer { background-color: var(--nav-color); color: white; padding: 1em; line-height: 1.5;}
 footer li {list-style-type: none;}
+footer li:hover {color:var(--hover-color);}
 
 /*Index Page Styling --> Emily F*/
 #goals h2{width:100%; padding-top: 2em;}
