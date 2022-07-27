@@ -277,15 +277,6 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#whoWeAre{
-    background-color: #68E46A;
-    line-height: 150%;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-}
-
 form{
     border-radius: 5px;
     background-color: #f2f2f2;
