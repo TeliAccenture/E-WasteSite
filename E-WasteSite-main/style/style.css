@@ -7,14 +7,17 @@
     --accent-color: rgb(16, 91, 16);
     --inactive-color: grey;
     --border-color: rgb(98, 175, 107);
-    --error-color: red;
+    --error-color:red; 
     --success-color: green;
     --link-color: blue;
     --shadow-color: rgba(0,0,0,0.5);
 }
 
 
+.formInput{
 
+  background-color: #7ed957;
+}
 /* locations styling START*/
 .bgimg {
     background-image: url("https://as1.ftcdn.net/v2/jpg/00/85/98/08/1000_F_85980822_VWs5yqRr1TOwfm5gk9qPQBgB191DcUFy.jpg");
@@ -70,6 +73,31 @@
   margin: 2rem;
 }
 
+.main-banner {
+  margin: 0 auto;
+  width: 1200PX;
+  height: 350px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-banner .imgban {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  transition: all ease-in-out 500ms;
+  -webkit-transition: all ease-in-out 500ms;
+  -moz-transition: all ease-in-out 500ms;
+  -o-transition: all ease-in-out 500ms;
+}
+/*Properties for Banner Background images */
+.main-banner #imgban3 {background-image: url(../images/newLocation.png);background-size: cover;background-position: center;background-repeat: no-repeat;}
+.main-banner #imgban2 {background-image: url(../images/onlineStore.png);background-size: cover;background-position: center;background-repeat: no-repeat;}
+.main-banner #imgban1 {background-image: url(../images/recycling.png);background-size: cover;background-position: center;background-repeat: no-repeat;}
+
+/*Properties for Banner Buttons*/
 .imgbanbtn {
   width: 40px;
   height: 40px;
@@ -88,7 +116,7 @@
 
 /*Banner Text Font Styling */
 .imgban-box {padding-top: 10px;padding-left: 100px; width: 60%;}
-#imgban3 .imgban-box p, #imgban3 .imgban-box h2{color: red;}
+#imgban3 .imgban-box p, #imgban3 .imgban-box h2{color: var(--error-color);}
 #imgban2 .imgban-box p, #imgban2 .imgban-box h2{color: #935dff;}
 #imgban1 .imgban-box p, #imgban1 .imgban-box h2{color: #7ed957;}
 
