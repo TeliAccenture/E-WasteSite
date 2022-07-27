@@ -1,17 +1,16 @@
 
 let loginStatus;
 let loginLink;
-let delay = 100;
+let delay = 150;
 
 setTimeout(function checkStatus(loginStatus){
-    console.log(loginStatus)
     if(loginStatus){
     loginLink = document.querySelector("#navLoginLink")
-    loginLink.innerHTML = "Logged in"
+    loginLink.innerHTML = `<i class="fa-solid fa-user"></i>`
     loginLink.href = ""
 } else {
     loginLink = document.querySelector("#navLoginLink")
-    loginLink.innerHTML = "Login/Signup"
+    loginLink.innerHTML = `<i class="fa-solid fa-person-circle-question"></i>`
 }
 }, delay, loginStatus)
 

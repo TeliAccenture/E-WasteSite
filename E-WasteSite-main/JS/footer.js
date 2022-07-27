@@ -7,5 +7,5 @@ fetch('../pages/Elements/footer.html')
     let oldelem = document.querySelector("script#replace_with_footer");
     let newelem = document.createElement("div");
     newelem.innerHTML = text;
-    oldelem.parentNode.replaceChild(newelem,oldelem);
+    oldelem.replaceWith(newelem,oldelem);
 })
