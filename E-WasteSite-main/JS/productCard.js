@@ -6,7 +6,8 @@ let oldelem;
 let newelem;
 
 
-
+let productsArray = await fetch("../JS/products.json").then(response => response.json())
+console.log(productsArray)
 // function populateProducts(){
 //     productsArray.forEach(product => {
 //         let htmlSegment = `<div id = "product" class="productCard">
