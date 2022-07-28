@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
+    <!--CSS StyleSheets-->
     <link rel = "stylesheet" href = "../style/default.css">
     <link rel = "stylesheet" media="screen and (min-width: 719px)" href = "..\style\style.css">
     <link rel = "stylesheet" media="screen and (max-width: 720px)" href = "..\style\mobile.css">
+    <!--JavaScript Calls-->
+    <script type ="text/javascript" src="../JS/locations.js"></script>
     <title>Our Locations</title>
 </head>
 <body class="pageLayout">
@@ -23,8 +26,9 @@
       <h2 class="LocationTitle">Our Locations</h2>
         <p class="LocationSub">The locations of our centres and where you can find the nearest centre to you.</p>
         <form id = "locationSearch">
-          <label for = "locationSearch">Locations</label>
-          <select name="locations" id="locations">
+          <label for = "locationSearch">Please Select a Location</label>
+          <select onchange="update()" name="locations" id="locations">
+            <option>Please Select</option>
             <option value="manchester">Manchester</option>
             <option value="nottingham">Nottingham</option>
             <option value="cambridge">Cambridge</option>
@@ -32,7 +36,12 @@
             <option value="maidstone">Maidstone</option>
           </select>
         </form>
-        <div id="locationDetails"></div>
+        <div>
+          <p id="locationTitle">No location selected</p>
+          <p id="locationAddress"></p>
+          <p id="locationOpeningTimes"></p>
+          <p id="locationFeatures"></p>
+        </div>
     </div>
     
     <div class="mapContainer">
