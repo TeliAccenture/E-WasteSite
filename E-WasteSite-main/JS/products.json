@@ -1,24 +1,54 @@
 [{
-    "inBasket" : true,
-    "productTitle": "Lightbulbs",
+    "inBasket" : false,
+    "productTitle": "Mobile Devices",
     "productPrice": 50,
-    "productImage": "../images/Lightbulbs.jpg",
-    "productDescription" : "Lorem ipsum"
+    "productImage": "../images/Mobile.jpg",
+    "productDescription" : "Lorem ipsum",
+    "productID" : "product1"
+},
+{
+    "inBasket" : false,
+    "productTitle": "Peripherals",
+    "productPrice": 10,
+    "productImage": "../images/NatureKeyboard.jpg",
+    "productDescription" : "Lorem ipsum",
+    "productID" : "product2"
+
 },
 {
     "inBasket" : true,
-    "productTitle": "Keyboard",
-    "productPrice": 10,
-    "productImage": "../images/NatureKeyboard.jpg",
-    "productDescription" : "Lorem ipsum"
+    "productTitle": "Televisions",
+    "productPrice": 30,
+    "productImage": "../images/TVinNature.jpg",
+    "productDescription" : "Lorem ipsum",
+    "productID" : "product3"
+
+},
+{
+    "inBasket" : true,
+    "productTitle": "laptop",
+    "productPrice": 40,
+    "productImage": "../images/Laptop.jpg",
+    "productDescription" : "Lorem ipsum",
+    "productID" : "product3"
+
+},
+{
+    "inBasket" : true,
+    "productTitle": "Toys",
+    "productPrice": 5,
+    "productImage": "../images/Toy.jpg",
+    "productDescription" : "Lorem ipsum",
+    "productID" : "product3"
 
 },
 {
     "inBasket" : false,
-    "productTitle": "TV",
-    "productPrice": 30,
-    "productImage": "../images/TVinNature.jpg",
-    "productDescription" : "Lorem ipsum"
+    "productTitle": "Miscellanous",
+    "productPrice": 10,
+    "productImage": "../images/Lightbulbs.jpg",
+    "productDescription" : "Lorem ipsum",
+    "productID" : "product3"
 
 }
 ]

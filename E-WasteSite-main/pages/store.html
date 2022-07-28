@@ -22,13 +22,23 @@
     </div>
     
     <!--Body-->
-
+    <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Our packages</h1>
+</div>
     <div id = "storeSearch" class="formInputGroup">
-    <form class="d-flex flex-row justify-content-end">
-        <input type = "text" id = "productSearch" name = "productSearch" autofocus placeholder="Search...">
-        <button type = "submit" id = "searchSubmit" name = "Submit" value = "Submit">Search</button>
+    <form class="row g-2 ">
+        <div class="col-sm-10">
+ <input type = "text" class="form-control " id = "productSearch" name = "productSearch" autofocus placeholder="Search...">
+        </div>
+        <div class="col-sm-2 ">
+             <button class = "btn w-100 btn-md btn-success" type = "submit" id = "searchSubmit" name = "Submit" value = "Submit">Search</button>
+        </div>
+       
+       
     </form>
     </div>
+    
     <hr class="my-4">
     <div class="storeContainer" >
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" id = "storeContainer">
@@ -36,6 +46,7 @@
            
     </div>   
     </div>
+</div>
   
     <!--Page Footer-->
     <script id="replace_with_footer" src="../JS/footer.js"></script>
