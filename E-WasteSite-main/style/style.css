@@ -28,7 +28,7 @@
     position:relative;
     background-size: contain;
   }
-.container {height: 500px;width: 500px;
+.containerMap {height: 500px;width: 500px;
 }
 .point{height: 15px;width: 15px;background-color: #bbb;border-radius: 50%;
 }
@@ -73,68 +73,8 @@
   margin: 2rem;
 }
 
-.main-banner {
-  margin: 0 auto;
-  width: 1200PX;
-  height: 350px;
-  background-color: #fff;
-  overflow: hidden;
-  position: relative;
-}
 
-.main-banner .imgban {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  transition: all ease-in-out 500ms;
-  -webkit-transition: all ease-in-out 500ms;
-  -moz-transition: all ease-in-out 500ms;
-  -o-transition: all ease-in-out 500ms;
-}
-/*Properties for Banner Background images */
-.main-banner #imgban3 {background-image: url(../images/newLocation.png);background-size: cover;background-position: center;background-repeat: no-repeat;}
-.main-banner #imgban2 {background-image: url(../images/onlineStore.png);background-size: cover;background-position: center;background-repeat: no-repeat;}
-.main-banner #imgban1 {background-image: url(../images/recycling.png);background-size: cover;background-position: center;background-repeat: no-repeat;}
-
-/*Properties for Banner Buttons*/
-.imgbanbtn {
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  border-radius: 4px;
-  position: absolute;
-  top: 150px;
-  z-index: 2000;
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-.imgbanbtn:hover {opacity: 0.9;}
-.imgbanbtn-prev {left: 5px;background-size: 60%;background-position: center;background-repeat: no-repeat;}
-.imgbanbtn-next {right: 5px;background-size: 60%;background-position: center;background-repeat: no-repeat;}
-
-/*Banner Text Font Styling */
-.imgban-box {padding-top: 10px;padding-left: 100px; width: 60%;}
-#imgban3 .imgban-box p, #imgban3 .imgban-box h2{color: var(--error-color);}
-#imgban2 .imgban-box p, #imgban2 .imgban-box h2{color: #935dff;}
-#imgban1 .imgban-box p, #imgban1 .imgban-box h2{color: #7ed957;}
-
-.imgban-box h2 {
-  text-align: left;
-  padding-top: 100px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 60px;
-  color: #fff
-}
-
-.imgban-box p {
-  padding-top: 6px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #fff;
-}
 .spacer{
-  height:135px;
+  height:2.4rem;
   width:100%;
 }

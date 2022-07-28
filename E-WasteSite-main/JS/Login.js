@@ -13,9 +13,9 @@ function setFormMessage(formElement, type, message){
 }
 //Setting input field errors
 function SetInputError(inputElement, message, type){
-    inputElement.classList.remove("formInput--error")
-    inputElement.classList.add(`formInput--${type}`)
-    inputElement.parentElement.querySelector(".formInput-error-message").textContent = message;
+    inputElement.classList.remove("form-control--error")
+    inputElement.classList.add(`form-control--${type}`)
+    inputElement.parentElement.querySelector(".form-control-error-message").textContent = message;
 }
 
 //Showing and hiding the appropriate forms
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
     //Input validation cases
 
-    document.querySelectorAll(".formInput").forEach(inputElement => {
+    document.querySelectorAll(".form-control").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
            
                      

@@ -22,7 +22,7 @@ setTimeout(function populateProducts(productsArray){
                                
                                  <img src = "${product.productImage}" alt = "product image" height = "250px" width = "250px">
                                  <p id = "productDescription" class="my-0 fw-normal" >${product.productDescription}</p>
-                                 <h2>${product.productPrice}</h2>
+                                 <h2>£${product.productPrice}</h2>
                             </div>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-success">Add to Basket</button>

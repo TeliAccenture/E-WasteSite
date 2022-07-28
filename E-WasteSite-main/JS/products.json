@@ -1,19 +1,22 @@
 [{
+    "inBasket" : true,
     "productTitle": "Lightbulbs",
-    "productPrice": "£50",
+    "productPrice": 50,
     "productImage": "../images/Lightbulbs.jpg",
     "productDescription" : "Lorem ipsum"
 },
 {
+    "inBasket" : true,
     "productTitle": "Keyboard",
-    "productPrice": "£10",
+    "productPrice": 10,
     "productImage": "../images/NatureKeyboard.jpg",
     "productDescription" : "Lorem ipsum"
 
 },
 {
+    "inBasket" : false,
     "productTitle": "TV",
-    "productPrice": "£30",
+    "productPrice": 30,
     "productImage": "../images/TVinNature.jpg",
     "productDescription" : "Lorem ipsum"
 
