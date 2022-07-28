@@ -1,6 +1,6 @@
 //Credited to Telisa DP, Accenture Internship, Code First Girls 2022
 
-fetch('../pages/Elements/navBar.html')
+fetch('../Elements/navBar.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#replace_with_navbar");

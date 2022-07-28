@@ -1,0 +1,71 @@
+<!--Credited to Telisa DP Accenture Internship, Code First Girls 2022-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./style/default.css">
+    <link rel = "stylesheet" media="screen and (min-width: 719px)" href = "..\style\style.css">
+    <link rel = "stylesheet" media="screen and (max-width: 720px)" href = "..\style\mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   
+    <title>Login</title>
+</head>
+<body class = "loginContainer text-center" >
+    
+   <div class = "loginFormElement">
+    <form class="form" id="login">
+        <h1 class = "h3 mb-3 fw-normal">Login</h1>
+        <div class = "formMessage"></div>
+        <div class="formInputGroup">
+            <input type="text" id="loginUsername"class="form-control" autofocus placeholder="Username or email">
+            <div class="form-control-error-message"></div>
+        </div>
+        <div class="formInputGroup">
+            <input type="password" id="loginPassword" class="form-control"  autofocus placeholder="Password">
+            <div class="form-control-error-message"></div>
+        </div>
+        <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+        <button class="btn btn-lg w-100 bg-success text-light mb-2"  type="submit">Continue</button>
+        <p class="formText">
+            <a href="#" class="formLink">Forgot your password?</a>
+        </p>
+        <p class="formText">
+            <a id="createAccountLink"  class="formLink">Don't have an account? Sign up!</a>
+        </p>
+    </form>
+    
+     <form class="form form--hidden" id="createAccount">
+         <h1 class = "h3 mb-3 fw-normal">Create Account</h1>
+         <div class = "formMessage"></div>
+         <div class="formInputGroup">
+             <input type="text" class="form-control" id= "signupUsername" autofocus placeholder="Username">
+             <div class="form-control-error-message"></div>
+         </div>
+         <div class="formInputGroup">
+             <input type="email" class="form-control" id="signupEmail" autofocus placeholder="Email">
+             <div class="form-control-error-message"></div>
+         </div>
+         <div class="formInputGroup">
+             <input type="password" class="form-control" id="signupPassword" autofocus placeholder="Password">
+             <div class="form-control-error-message"></div>
+         </div>
+         <div class="formInputGroup">
+             <input type="password" class="form-control" id="confirmPassword" autofocus placeholder="Confirm Password">
+             <div class="form-control-error-message"></div>
+         </div>
+         <button class="btn btn-lg w-100 bg-success text-light mb-2" type="submit">Continue</button>
+         <p class="formText">
+             <a  id="loginLink" class="formLink">Already have an account? Sign in</a>
+         </p>
+     </form>
+    </div>
+</body>
+</html>
+<script src="./JS/Login.js"></script>
